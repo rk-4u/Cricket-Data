@@ -6,7 +6,7 @@ function CrickApi() {
   useEffect(() => {
     axios
       .get(
-        "https://api.cricapi.com/v1/currentMatches?apikey=e6f0c95e-49e4-4274-a903-6bda3a827edb&offset=0"
+        "https://api.cricapi.com/v1/currentMatches?apikey=120d0b4d-be0c-490d-99a5-5bea90d25792&offset=0"
       )
       .then((res) => {
         console.log(res.data);

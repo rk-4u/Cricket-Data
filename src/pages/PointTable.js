@@ -5,7 +5,7 @@ function PointTable() {
   const [pts, setPts] = useState([]);
   useEffect(() => {
     axios
-      .get("https://api.cricapi.com/v1/series_points?apikey=e6f0c95e-49e4-4274-a903-6bda3a827edb&id=5a28d054-fd19-404a-a1cc-887c18c48d0b"   )
+      .get("https://api.cricapi.com/v1/series_points?apikey=120d0b4d-be0c-490d-99a5-5bea90d25792&id=0637eddc-ee0a-46c9-aca2-f5bb7f5ff25b"   )
       .then((res) => {
         console.log(res.data);
         setPts(res.data.data);
