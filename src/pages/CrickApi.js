@@ -33,26 +33,26 @@ function CrickApi() {
           <div className="d-flex ms-1 me-1">
             <div className="d-flex justify-content-start">
               <img
-                src={crick.teamInfo[0].img}
+                src={crick.teamInfo[0].img || "lOading..."}
                 className="figure-img w-25 rounded"
                 alt=""
               />
-              <div className="fs-6 mt-1">{crick.teamInfo[0].name}</div>
+              <div className="fs-6 mt-1">{crick.teamInfo[0].name || "lOading..."}</div>
             </div>
             <div className="d-flex gap-3 justify-content-end">
-              <span className="fs-6 mt-1">{crick.score[0].o}</span>
-              <span className="fs-6 mt-1"> {crick.score[0].r}/{crick.score[0].w}</span>
+              {/* <span className="fs-6 mt-1">{crick.score[0].o || "lOading..."}</span>
+              <span className="fs-6 mt-1"> {crick.score[0].r}/{crick.score[0].w || "lOading..."}</span> */}
             </div>
           </div>
 
           <div className="d-flex ms-1 me-1">
             <div className="d-flex justify-content-start">
               <img
-                src={crick.teamInfo[1].img}
+                src={crick.teamInfo[1].img || "lOading..."}
                 className="figure-img w-25 rounded"
                 alt=""
               />
-              <div className="fs-6 mt-1">{crick.teamInfo[1].name}</div>
+              <div className="fs-6 mt-1">{crick.teamInfo[1].name || "lOading..."}</div>
             </div>
             {/* <div className="d-flex gap-3 justify-content-end">
               <span className="fs-6 mt-1">{{crick.score[0].o}}</span>
@@ -61,7 +61,7 @@ function CrickApi() {
           </div>
 
           <p>
-            <span className="ms-2">{crick.score[0].inning}</span>
+            {/* <span className="ms-2">{crick.score[0].inning || "lOading..."}</span> */}
           </p>
         </div>
       </div>
